@@ -54,31 +54,31 @@ for(i in 7) {
 }
 
 #shop1 한식음식점 요일별 평균 매출 추이
-income1<-c(211334240,230969595,238575776, 243209036,262032854,216049797,156981355)
+income1<-c(mean(shop1$day1_won),mean(shop1$day2_won),mean(shop1$day3_won),mean(shop1$day4_won),mean(shop1$day5_won),mean(shop1$day6_won),mean(shop1$day7_won))
 data_income1<-data.frame(day=c(1:7),income1)
 ggplot(data=data_income1, aes(x=day, y=income1))+geom_point(color="blue",size=2)+geom_line(color="black", size=0.3)+ggtitle("한식음식점 요일별 평균 매출추이")
 
 #중식음식점 요일별 평균 매출 추이
-income2<-c(31332928,35504545,36535431, 36764106,39374720, 32049199, 27423526)
+income2<-c(mean(shop2$day1_won),mean(shop2$day2_won),mean(shop2$day3_won),mean(shop2$day4_won),mean(shop2$day5_won),mean(shop2$day6_won),mean(shop2$day7_won))
 data_income2<-data.frame(day=c(1:7),income2)
 ggplot(data=data_income2, aes(x=day, y=income2))+geom_point(color="red",size=2)+geom_line(color="black", size=0.3)+ggtitle("중식음식점 요일별 평균 매출추이")
 
 #일식음식점 요일별 평균 매출 추이
-income3<-c(52704379, 59349291, 72034773, 63665018, 69527453,52042291,31848323)
+income3<-c(mean(shop3$day1_won),mean(shop3$day2_won),mean(shop3$day3_won),mean(shop3$day4_won),mean(shop3$day5_won),mean(shop3$day6_won),mean(shop3$day7_won))
 data_income3<-data.frame(day=c(1:7),income3)
 ggplot(data=data_income3, aes(x=day, y=income3))+geom_point(color="orange",size=2)+geom_line(color="black", size=0.3)+ggtitle("일식음식점 요일별 평균 매출추이")
 
 #양식음식점 요일별 평균 매출 추이
-income4<-c(56606027,67077149,72034773,72793390,84509794,89326885,66832306)
+income4<-c(mean(shop4$day1_won),mean(shop4$day2_won),mean(shop4$day3_won),mean(shop4$day4_won),mean(shop4$day5_won),mean(shop4$day6_won),mean(shop4$day7_won))
 data_income4<-data.frame(day=c(1:7),income4)
 ggplot(data=data_income4, aes(x=day, y=income4))+geom_point(color="yellow",size=2)+geom_line(color="black", size=0.3)+ggtitle("양식음식점 요일별 평균 매출추이")
 
 #슈퍼마켓 요일별 평균 매출 추이
-income5<-c(98215658,97742921,99440853,97411271,104097147,104817742,84778686)
+income5<-c(mean(market1$day1_won),mean(market1$day2_won),mean(market1$day3_won),mean(market1$day4_won),mean(market1$day5_won),mean(market1$day6_won),mean(market1$day7_won))
 data_income5<-data.frame(day=c(1:7),income5)
 ggplot(data=data_income5, aes(x=day, y=income5))+geom_point(color="purple",size=2)+geom_line(color="black", size=0.3)+ggtitle("슈퍼마켓 요일별 평균 매출추이")
 
 #편의점 요일별 평균 매출 추이
-income6<-c(122461691,124175841,127367866,126291165,135176617, 118960859,102063386)
+income6<-c(mean(market2$day1_won)mean(market2$day2_won),mean(market2$day3_won),mean(market2$day4_won),mean(market2$day5_won),mean(market2$day6_won),mean(market2$day7_won))
 data_income6<-data.frame(day=c(1:7),income6)
 ggplot(data=data_income6, aes(x=day, y=income6))+geom_point(color="skyblue",size=2)+geom_line(color="black", size=0.3)+ggtitle("편의점 요일별 평균 매출추이")
